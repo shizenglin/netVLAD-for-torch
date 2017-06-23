@@ -23,3 +23,9 @@ model = nn.Sequential()
 model:add(netVLAD_layer)
 ```
 ![image](https://github.com/shamangary/netVLAD-for-torch/blob/master/netVLAD.png)
+
+
+Ref.
+[1] R. Arandjelović, P. Gronat, A. Torii, T. Pajdla, J. Sivic. "NetVLAD: CNN architecture for weakly supervised place recognition", CVPR, 2016.
+[2] Girdhar, Rohit and Ramanan, Deva and Gupta, Abhinav and Sivic, Josef and Russell, Bryan. "ActionVLAD: Learning spatio-temporal aggregation for action classification", CVPR, 2017.
+
