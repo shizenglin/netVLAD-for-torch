@@ -4,7 +4,10 @@ Torch7 implementation of netVLAD, actionVLAD
 This is a beta version of netVLAD implementation.
 ```
 #How to use?
-require('./fun_netVLAD_layer.lua')
+Step.1
+Download the file to current directory.
+
+Step.2 (Inside your .lua file)
 paths.dofile('./fun_netVLAD_layer.lua')
 
 K=10
