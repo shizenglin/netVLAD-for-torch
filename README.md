@@ -14,8 +14,8 @@ Download the file to current directory.
 ```
 paths.dofile('./fun_netVLAD_layer.lua')
 
-K=10  --number of dictionary, c
-N=3   --number of features, x
+K=10  --number of anchors
+N=3   --number of features
 D=128 --feature dimension
 
 netVLAD_layer = create_netVLAD_layer(K,N,D)
