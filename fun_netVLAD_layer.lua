@@ -2,7 +2,8 @@ require('./netVLAD_residual.lua')
 
 
 -- Remember input size would be: B(batch size)xC(channel number)xD(feature dim)
--- The "channel number C" would be considered as "feature number N" since netVLAD treats feature maps as local descriptors.
+-- The "channel number C" would be considered as "feature number N" since netVLAD treat feature maps as local descriptors.
+-- The "learning rate lr" is the relative learing rate between the main stream and the netVLAD_layer. Default is 1e-4.
 
 function create_netVLAD_layer(anchor_num,feature_num,feature_dim,lr)
 
