@@ -12,7 +12,7 @@ Download the file to current directory.
 
 *Step.2 (Inside your .lua file)*
 ```
-paths.dofile('./fun_netVLAD_layer.lua')
+require('./fun_netVLAD_layer.lua')
 
 K=10  --number of anchors
 N=3   --number of features
