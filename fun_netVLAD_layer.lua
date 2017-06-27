@@ -1,20 +1,19 @@
-require('nn')
 require('./netVLAD_residual.lua')
 
 
--- Remember input size would be: BxCxWxH
+-- Remember input size would be: B(batch size)xC(channel number)xD(feature dim)
 
-function create_netVLAD_layer(k,n,inputSize,lr)
+function create_netVLAD_layer(anchor_num,feature_num,feature_dim,lr)
 
 	-------------------------------------------------------------------------------------------------------------------
 	--Parameters settting
 	-------------------------------------------------------------------------------------------------------------------
 
 	netVLAD_opt = {
-	   K = k,
-	   N = n,
+	   K = anchor_num,
+	   N = feature_num,
 	   LR = lr,
-	   D = inputSize,
+	   D = feature_dim,
 	   alpha = 1,
 	   eps = 1e-2
 	}
