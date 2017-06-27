@@ -2,6 +2,7 @@ require('./netVLAD_residual.lua')
 
 
 -- Remember input size would be: B(batch size)xC(channel number)xD(feature dim)
+-- The "channel number C" would be considered as "feature number N" since netVLAD treat feature maps as local descriptors.
 
 function create_netVLAD_layer(anchor_num,feature_num,feature_dim,lr)
 
